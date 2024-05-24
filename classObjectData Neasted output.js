@@ -7,7 +7,7 @@ class Car {
 }
 
  function myCar(){
-const person = {
+const personCars = {
 "person01":{
   carName: "Volvo",
   //lastName: "Doe",
@@ -24,11 +24,11 @@ const person = {
   age: 4,
   eyeColor: "blue"
 }};
-for(let persons in person){
-let name = person[persons]["carName"];
-let year = 2024-person[persons]["age"];
+for(let persons in personCars){
+let name = personCars[persons]["carName"];
+let year = 2024-personCars[persons]["age"];
 let myCar1 = new Car(name,year);
-document.write("Car Name :"+myCar1.name+"  ||  released :"+myCar1.year+"<br>")
+document.write(`Owner :${persons}, Car Name :`+myCar1.name+"  ||  released :"+myCar1.year+"<br>")
 
 }
  //document.getElementById("demo").innerHTML =
